@@ -274,6 +274,8 @@ You can use `docker-compose up` to up all the stack before you call your integra
     * `grunt release:major` for major number jump.
 
 ## Release History
+- **1.2.1**, *06 Sep 2019*
+    - Adds a new the optional config param `shouldFailWhenSchemaIsMissing` to let the producer fail when no schema could be found (instead of producing as JSON)
 - **1.2.0**, *03 March 2019*
     - Fixed cases when both key and value schemas were available, but the value was being serialized using the key schema (by [macabu](https://github.com/macabu))
     - Support for (de)serialization of keys. Added `parsedKey` and `schemaIdKey` to the consumer data object (by [macabu](https://github.com/macabu))
